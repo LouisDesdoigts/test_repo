@@ -3,7 +3,7 @@ import paths as p
 import jax.numpy as np
 import matplotlib.pyplot as plt
 
-data = np.load(p.data / "src/data/data.npy")
+data = np.load(p.data / "data.npy")
 
 
 plt.hist(data)

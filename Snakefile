@@ -1,6 +1,8 @@
 rule make_data:
     output:
-        "data.npy",
+        "src/data/data.npy",
+    cache: 
+        True
     conda:
         "environment.yml"
     script:
@@ -8,7 +10,7 @@ rule make_data:
 
 rule plot_data:
     input:
-        "data.npy",
+        "src/data/data.npy",
     output:
         "src/tex/figures/sample.pdf"
     conda:
