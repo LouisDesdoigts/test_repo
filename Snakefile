@@ -10,10 +10,7 @@ rule make_data:
 
 rule plot_data:
     input:
-        "src/data/data_files/data1.npy"
-        "src/data/data_files/data2.npy"
-        # "src/data/data_files/"
-        # rules.make_data.output
+        "src/data/data_files/"
     output:
         "src/tex/figures/sample.pdf"
     conda:

@@ -32,8 +32,11 @@ datasets:
 # Custom file dependencies
 dependencies:
   src/scripts/plot_data.py:
+    # Doesn't work
     # - src/data/data_files/data1.npy
     # - src/data/data_files/data2.npy
+
+    # Does work
     - src/data/data_files/
 
 # Name of the `.tex` manuscript and corresponding `.pdf` article
