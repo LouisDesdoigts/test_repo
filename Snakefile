@@ -8,9 +8,17 @@ rule make_data:
     script:
         "src/scripts/make_data.py"
 
+
+# Programatically generate inputs
+inputs = []
+for i in range(2):
+    file_name = "src/data/data_files/data{}.npy".format(i+1)
+    inputs.append(file_name)
+
 rule plot_data:
     input:
-        "src/data/data_files/"
+        inputs
+        # "src/data/data_files/"
     output:
         "src/tex/figures/sample.pdf"
     conda:
