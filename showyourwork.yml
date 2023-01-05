@@ -35,8 +35,6 @@ dependencies:
     # - src/data/data_files/data1.npy
     # - src/data/data_files/data2.npy
     - src/data/data_files/
-  # src/tex/ms.tex:
-  #   - src/tex/stylesheet.tex
 
 # Name of the `.tex` manuscript and corresponding `.pdf` article
 ms_name: ms
